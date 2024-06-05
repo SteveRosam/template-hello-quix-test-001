@@ -7,7 +7,7 @@ from typing import Optional
 
 from quixstreams.platforms.quix.config import QuixKafkaConfigsBuilder
 
-builder = QuixKafkaConfigsBuilder()
+builder = QuixKafkaConfigsBuilder(quix_sdk_token=os.environ['Quix__Sdk__Token'])
 
 config = builder.api.get_librdkafka_connection_config(builder.workspace_id)
 print([k for k in config.keys()])
