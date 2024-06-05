@@ -1,3 +1,3 @@
-quixstreams @ https://github.com/quixio/quix-streams.git@feature/broker-config-dict
+https://github.com/quixio/quix-streams.git@feature/broker-config-dict
 python-dotenv
 pandas
