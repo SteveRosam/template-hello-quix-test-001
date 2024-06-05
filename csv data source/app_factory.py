@@ -13,8 +13,6 @@ config = builder.api.get_librdkafka_connection_config(builder.workspace_id)
 print([k for k in config.keys()])
 
 
-print(config.broker_address)
-
 from quixstreams import Application
 
 logger = logging.getLogger()
