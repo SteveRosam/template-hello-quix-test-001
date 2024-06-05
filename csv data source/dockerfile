@@ -4,6 +4,7 @@ ENV DEBIAN_FRONTEND="noninteractive"
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONIOENCODING=UTF-8
 
+RUN apt-get update && apt-get install -y git
 
 WORKDIR /app
 
