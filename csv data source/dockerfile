@@ -6,6 +6,9 @@ ENV PYTHONIOENCODING=UTF-8
 
 RUN apt-get update && apt-get install -y git
 
+
+
+
 WORKDIR /app
 
 RUN pip install git+https://github.com/quixio/quix-streams.git@feature/broker-config-dict
